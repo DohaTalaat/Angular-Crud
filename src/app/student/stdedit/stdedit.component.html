@@ -1,0 +1,13 @@
+<div class ="form-group"  >
+    <div class="row" >   
+        <label class="my-2 mx-2 " >ID</label> 
+        <input [(ngModel)]="nstd.id" type="number" class="form-controle" disabled>
+    
+        <label class="my-2 mx-2 "  >Student Name</label>
+        <input [(ngModel)]="nstd.name" type="text" class="form-controle">
+        <label class="my-2 mx-2 " >Student Age </label>
+        <input [(ngModel)]="nstd.age" type="number" class="form-controle">
+        
+        <button  class="btn btn-danger w-25 p-2 my-2 mx-2 " (click)="Edit()" >Edit</button>
+    </div>
+</div>

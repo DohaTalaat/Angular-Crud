@@ -1,0 +1,36 @@
+<div class="container"  >
+    <h1>student list</h1>
+ <table class="table table-bordered table-hover my-7 mx-7 p-10 ">
+     <thead>
+       <tr>
+         <th scope="col">ID</th>
+         <th scope="col">Name</th>
+         <th scope="col">Age</th>
+         <th scope="col">Operation</th>
+       </tr>
+     </thead>
+     <tbody>
+       
+       <tr *ngFor="let item of std" >
+        
+         <td>{{item.id}}</td>
+         <td>{{item.name}}</td>
+         <td>{{item.age}}</td>
+       <td> 
+           <button class="btn btn-primary" (click)="delete(item)">Delete</button>
+           
+           <button class="btn btn-primary" (click)="edit(item)">Edit</button>
+           </td>
+       </tr>
+     </tbody>
+ </table>
+</div>
+<div>
+  <app-addstd></app-addstd>
+ </div>
+ <div>
+  <app-stdedit [nstd]="estd"></app-stdedit>
+ </div>
+ <div>
+   <app-deletestd [stud]="stdd" ></app-deletestd>
+ </div>

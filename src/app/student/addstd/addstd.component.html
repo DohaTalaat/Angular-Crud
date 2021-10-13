@@ -1,0 +1,13 @@
+<button  class="btn btn-danger w-25 p-2 my-2 mx-2 " (click)="create()"  >{{createe}}</button>
+<div class ="form-group" [hidden]=flag >
+  <div class="row" >   
+      <label class="my-2 mx-2 " >ID</label> 
+      <input value="{{std.id}}" type="text" class="form-controle">
+  
+      <label class="my-2 mx-2 "  >Student Name</label>
+      <input value="{{std.name}}" type="text" class="form-controle">
+      <label class="my-2 mx-2 " >Student Age </label>
+      <input value="{{std.age}}" type="text" class="form-controle">
+      
+      <button  class="btn btn-danger w-25 p-2 my-2 mx-2 " (click)=save() >Save</button>
+  </div>
